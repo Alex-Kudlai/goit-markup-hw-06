@@ -648,8 +648,6 @@ img {
   padding: 4px 3px;
   margin-right: 8px;
   fill: transparent;
-  transition: background-color var(--transition-duration-function),
-    fill var(--transition-duration-function), border-color var(--transition-duration-function);
 }
 .user-policy {
   color: #4d5ae5;
