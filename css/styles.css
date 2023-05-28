@@ -350,7 +350,6 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customers-list-link:hover,
 .customers-list-link:focus {
   border-color: #404bbf;
@@ -448,6 +447,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition-duration-function);
+  padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
   position: absolute;
@@ -479,6 +479,153 @@ img {
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.head-form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-background-color-theme-dark);
+  margin-bottom: 16px;
+}
+.form-wrapper {
+  margin-bottom: 8px;
+}
+
+.contact-field-descr {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--icon-color);
+  margin-bottom: 4px;
+}
+.contact-form-icon {
+  position: relative;
+  display: block;
+}
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  border-radius: 4px;
+  padding-left: 38px;
+  transition: border-color var(--transition-duration-function);
+}
+.contact-form-input:focus {
+  border-color: var(--secondary-text-color-theme-dark);
+  outline: none;
+}
+.contact-form-input:focus + .input-icon {
+  fill: var(--secondary-text-color-theme-dark);
+}
+.input-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.form-comment-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+.contact-form-massage {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  color: rgba(46, 47, 66, 0.4);
+  resize: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  background-color: transparent;
+  transition: border-color var(--transition-duration-function);
+}
+.contact-form-massage:focus {
+  border-color: var(--secondary-text-color-theme-dark);
+  outline: none;
+}
+.contact-form-massage::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-checkbox-position {
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--icon-color);
+}
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+.contact-own-checkbox {
+  fill: var(--secondary-text-color-theme-light);
+}
+.fake-checkbox {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+  padding: 4px 3px;
+  margin-right: 8px;
+  transition: background-color var(--transition-duration-function),
+    fill var(--transition-duration-function), border-color var(--transition-duration-function);
+}
+.user-policy {
+  color: #4d5ae5;
+  font-size: 12px;
+  line-height: 1.33;
+  text-decoration-line: underline;
+  letter-spacing: 0.04em;
+}
+.contact-form-checkbox:checked + .contact-form-checkbox-wrapper > .fake-checkbox {
+  background-color: var(--accent-color);
+  border: none;
+  fill: var(--main-color);
+  border-color: var(--accent-color);
+}
+.contact-form-submit {
+  min-width: 169px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 32px;
+  background-color: var(--secondary-text-color-theme-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  border: none;
+  transition: background-color var(--transition-duration-function);
+}
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+  background-color: var(--accent-color);
+}
+
+/* BACKDROP */
 
 /* Main portfolio */
 .section-portfolio {
