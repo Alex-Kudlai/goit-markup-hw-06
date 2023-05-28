@@ -646,7 +646,7 @@ img {
 .contact-own-checkbox {
   fill: var(--secondary-text-color-theme-light);
 }
-.fake-checkbox {
+.checkbox-label {
   width: 16px;
   height: 16px;
   display: inline-flex;
@@ -657,6 +657,7 @@ img {
   cursor: pointer;
   padding: 4px 3px;
   margin-right: 8px;
+  fill: transparent;
   transition: background-color var(--transition-duration-function),
     fill var(--transition-duration-function), border-color var(--transition-duration-function);
 }
@@ -667,7 +668,7 @@ img {
   text-decoration-line: underline;
   letter-spacing: 0.04em;
 }
-.contact-form-checkbox:checked + .contact-form-checkbox-wrapper > .fake-checkbox {
+.contact-form-checkbox:checked + .contact-form-checkbox-wrapper > .checkbox-label {
   background-color: var(--accent-color);
   border: none;
   fill: var(--main-color);
